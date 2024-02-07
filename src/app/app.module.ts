@@ -13,9 +13,9 @@ import { AppRoutingModule } from './app-routing.module';
 @NgModule({
   declarations: [AppComponent],
   imports: [BrowserModule, IonicModule.forRoot(), AppRoutingModule,
-  provideFirebaseApp(() => initializeApp(environment.firebase)),
-  provideFirestore(() => getFirestore()),
-  provideFirebaseApp(() => initializeApp({"projectId":"iote3-b8780","appId":"1:1030786034981:web:4dc4d192bc667bd48abecc","storageBucket":"iote3-b8780.appspot.com","apiKey":"AIzaSyD036Hf9HOmaRXVnWekzBEWrSR1FpLBQ4k","authDomain":"iote3-b8780.firebaseapp.com","messagingSenderId":"1030786034981"}))],
+    provideFirebaseApp(() => initializeApp(environment.firebase)),
+    provideFirestore(() => getFirestore()),
+    provideFirebaseApp(() => initializeApp({"projectId":"iote3-b8780","appId":"1:1030786034981:web:4dc4d192bc667bd48abecc","storageBucket":"iote3-b8780.appspot.com","apiKey":"AIzaSyD036Hf9HOmaRXVnWekzBEWrSR1FpLBQ4k","authDomain":"iote3-b8780.firebaseapp.com","messagingSenderId":"1030786034981"}))],
   providers: [{ provide: RouteReuseStrategy, useClass: IonicRouteStrategy }],
   bootstrap: [AppComponent],
 })
