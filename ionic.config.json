@@ -1,0 +1,7 @@
+{
+  "name": "IOTE3",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
