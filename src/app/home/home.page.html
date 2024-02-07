@@ -13,12 +13,24 @@
     </ion-toolbar>
   </ion-header>
 
-  <div id="container">
-    <ion-button (click)=apagar()>{{}}</ion-button>
-    <ion-button (click)=encender()>L</ion-button>
-    <ion-button>led3</ion-button>
-    <ion-button (click)=toogleState()>
-      {{ledStatus? 'Encendido':"Apagado"}}
+  <div class="container">
+    <ion-button (click)=toogleState() [color]="ledStatus? 'primary':'secondary'" shape="round" size="small">
+      {{ledStatus? 'encender':'apagar'}}
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button (click)=toogleState2() [color]="ledStatus2? 'primary':'secondary'" shape="round" size="small">
+      {{ledStatus2? 'encender':'apagar'}}
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button (click)=toogleState3() [color]="ledStatus3? 'primary':'secondary'" shape="round" size="small">
+      {{ledStatus3? 'encender':'apagar'}}
+    </ion-button>
+  </div>
+  <div class="container">
+    <ion-button (click)=toogleState4() [color]="ledStatus4? 'primary':'secondary'" shape="round" size="small">
+      {{ledStatus4? 'encender':'apagar'}}
     </ion-button>
   </div>
 </ion-content>
