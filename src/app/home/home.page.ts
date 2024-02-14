@@ -47,10 +47,10 @@ async toogleState4() {
   this.rutadetabla2 = doc(this.db,'controlLed','LED2');//RUTA DE TABLA EN LA BD
   this.rutadetabla3 = doc(this.db,'controlLed','LED3');//RUTA DE TABLA EN LA BD
   this.rutadetabla4 = doc(this.db,'controlLed','LEDS');//RUTA DE TABLA EN LA BD
-  await setDoc(this.rutadetabla, { encender:this.ledStatus});//CAMBIA EL ATRIBUTO DE LA TABLA
-  await setDoc(this.rutadetabla, { encender:this.ledStatus2});//CAMBIA EL ATRIBUTO DE LA TABLA
-  await setDoc(this.rutadetabla, { encender:this.ledStatus3});//CAMBIA EL ATRIBUTO DE LA TABLA
   await setDoc(this.rutadetabla, { encender:this.ledStatus4});//CAMBIA EL ATRIBUTO DE LA TABLA
+  await setDoc(this.rutadetabla2, { encender:this.ledStatus4});//CAMBIA EL ATRIBUTO DE LA TABLA
+  await setDoc(this.rutadetabla3, { encender:this.ledStatus4});//CAMBIA EL ATRIBUTO DE LA TABLA
+  await setDoc(this.rutadetabla4, { encender:this.ledStatus4});//CAMBIA EL ATRIBUTO DE LA TABLA
   console.log(this.ledStatus);
   console.log(this.ledStatus2);
   console.log(this.ledStatus3);
