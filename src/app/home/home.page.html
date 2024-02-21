@@ -1,7 +1,7 @@
 <ion-header [translucent]="true">
   <ion-toolbar>
     <ion-title>
-      Blank
+      LEDS
     </ion-title>
   </ion-toolbar>
 </ion-header>
@@ -9,28 +9,30 @@
 <ion-content [fullscreen]="true">
   <ion-header collapse="condense">
     <ion-toolbar>
-      <ion-title size="large">Blank</ion-title>
+      <ion-title size="large">Encender y apagar leds</ion-title>
     </ion-toolbar>
   </ion-header>
-
-  <div class="container">
-    <ion-button (click)=toogleState() [color]="ledStatus? 'primary':'secondary'" shape="round" size="small">
-      {{ledStatus? 'encender':'apagar'}}
-    </ion-button>
+  <div class="leds">
+    <div class="container">
+      <ion-button (click)=toogleState() [color]="ledStatus? 'primary':'secondary'" shape="round" size="small">
+        {{ledStatus? 'encender':'apagar'}}
+      </ion-button>
+    </div>
+    <div class="container">
+      <ion-button (click)=toogleState2() [color]="ledStatus2? 'primary':'secondary'" shape="round" size="small">
+        {{ledStatus2? 'encender':'apagar'}}
+      </ion-button>
+    </div>
+    <div class="container">
+      <ion-button (click)=toogleState3() [color]="ledStatus3? 'primary':'secondary'" shape="round" size="small">
+        {{ledStatus3? 'encender':'apagar'}}
+      </ion-button>
+    </div>
+    <div class="container">
+      <ion-button (click)=toogleState4() [color]="ledStatus4? 'primary':'secondary'" shape="round" size="small">
+        {{ledStatus4? 'encender':'apagar'}}
+      </ion-button>
+    </div>
   </div>
-  <div class="container">
-    <ion-button (click)=toogleState2() [color]="ledStatus2? 'primary':'secondary'" shape="round" size="small">
-      {{ledStatus2? 'encender':'apagar'}}
-    </ion-button>
-  </div>
-  <div class="container">
-    <ion-button (click)=toogleState3() [color]="ledStatus3? 'primary':'secondary'" shape="round" size="small">
-      {{ledStatus3? 'encender':'apagar'}}
-    </ion-button>
-  </div>
-  <div class="container">
-    <ion-button (click)=toogleState4() [color]="ledStatus4? 'primary':'secondary'" shape="round" size="small">
-      {{ledStatus4? 'encender':'apagar'}}
-    </ion-button>
-  </div>
+  
 </ion-content>
