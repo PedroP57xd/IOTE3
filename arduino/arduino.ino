@@ -8,7 +8,7 @@ int led1= 23,led2= 22, led3=21;
 
 //Conectar a una red WiFi
 const char* WIFI_SSID = "STP1";            //el nombre de la red
-const char* WIFI_PASSWORD = "1234esp321";  //la contraseña de la red
+const char* WIFI_PASSWORD = "1234esp3210";  //la contraseña de la red
 //Recursos de Firebase
 const char* API_KEY = "AIzaSyD036Hf9HOmaRXVnWekzBEWrSR1FpLBQ4k";
 const char* FIREBASE_PROJECT_ID = "iote3-b8780";
